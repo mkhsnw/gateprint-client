@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/mkhsnw/gateprint-client/issues"
   },
-  "homepage": "https://github.com/mkhsnw/gateprint-client#readme"
+  "homepage": "https://github.com/mkhsnw/gateprint-client#readme",
+  "type": "module"
 }
