@@ -1,6 +1,6 @@
 {
   "name": "gateprint-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SDK for gateprint client, makes you communicate with gateprint-host ",
   "main": "GatePrint.js",
   "scripts": {

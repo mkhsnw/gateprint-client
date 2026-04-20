@@ -1,7 +1,9 @@
 class GatePrint {
-  constructor(appKey = "") {
+  constructor(appKey = "", ipAddr = "", port = 9100) {
     this.appKey = appKey;
     this.commands = [];
+    this.ipAddr = ipAddr;
+    this.port = port;
   }
 
   // --- Teks & Dasar ---
@@ -68,14 +70,13 @@ class GatePrint {
     return this;
   }
 
-  // --- Pengiriman ---
   async print() {
     const payload = {
       commands: this.commands,
     };
 
     try {
-      const response = await fetch("http://localhost:9100/print", {
+      const response = await fetch(`http://${this.ipAddr}:${this.port}/print`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -83,7 +84,7 @@ class GatePrint {
         },
         body: JSON.stringify(payload),
       });
-      this.commands = []; // Reset setelah print
+      this.commands = [];
 
       if (!response.ok)
         throw new Error(
