@@ -1,0 +1,26 @@
+{
+  "name": "gateprint-client",
+  "version": "1.0.0",
+  "description": "SDK for gateprint client, makes you communicate with gateprint-host ",
+  "main": "GatePrint.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkhsnw/gateprint-client.git"
+  },
+  "keywords": [
+    "thermal",
+    "gateprint",
+    "print",
+    "thermal",
+    "printer"
+  ],
+  "author": "Muhammad Khosyi Nawwari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkhsnw/gateprint-client/issues"
+  },
+  "homepage": "https://github.com/mkhsnw/gateprint-client#readme"
+}
