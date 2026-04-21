@@ -13,7 +13,7 @@ npm install github:mkhsnw/gateprint-client
 ## via CDN if you use script tag in html
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/mkhsnw/gateprint-client@v1.1.0/dist/GatePrint.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mkhsnw/gateprint-client@v1.2.0/dist/GatePrint.js"></script>
 ```
 
 # List Functional Gateprint
@@ -93,7 +93,7 @@ or
 .datamatrix("your-code", size) // default 3
 ```
 
-\*\* some devices might not support printing on PDF417 Format
+\*\* some devices might not support printing on DataMatrix Format
 
 ## Smooth (high quality)
 
