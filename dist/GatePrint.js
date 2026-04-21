@@ -102,8 +102,4 @@ if (typeof window !== "undefined") {
   window.GatePrint = GatePrint;
 }
 
-if (typeof module !== "undefined" && module.exports) {
-  module.exports = GatePrint;
-}
 
-export default GatePrint;

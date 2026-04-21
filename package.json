@@ -1,8 +1,10 @@
 {
   "name": "gateprint-client",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "SDK for gateprint client, makes you communicate with gateprint-host ",
-  "main": "GatePrint.js",
+  "main": "dist/GatePrint.js",
+  "module": "dist/GatePrint.esm.js",
+  "browser": "dist/GatePrint.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
