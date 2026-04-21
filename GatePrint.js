@@ -1,5 +1,5 @@
 class GatePrint {
-  constructor(appKey = "", ipAddr = "", port = 9100) {
+  constructor(appKey = "", ipAddr = "localhost", port = 9100) {
     this.appKey = appKey;
     this.commands = [];
     this.ipAddr = ipAddr;
@@ -100,6 +100,10 @@ class GatePrint {
 
 if (typeof window !== "undefined") {
   window.GatePrint = GatePrint;
+}
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = GatePrint;
 }
 
 export default GatePrint;
