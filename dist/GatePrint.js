@@ -18,12 +18,6 @@ class GatePrint {
     return this;
   }
 
-  // --- Gaya Teks (Support by mect/go-escpos) ---
-  bold(val = true) {
-    this.commands.push({ action: "bold", value: val });
-    return this;
-  }
-
   underline(val = true) {
     // Package mect mensupport underline
     this.commands.push({ action: "underline", value: val });
@@ -70,6 +64,27 @@ class GatePrint {
     return this;
   }
 
+  smooth(val = true) {
+    this.commands.push({ action: "smooth", value: val });
+    return this;
+  }
+
+  pdf417(content, size = 3) {
+    this.commands.push({
+      action: "pdf417",
+      value: { content: content, size: size },
+    });
+    return this;
+  }
+
+  datamatrix(content, size = 3) {
+    this.commands.push({
+      action: "datamatrix",
+      value: { content: content, size: size },
+    });
+    return this;
+  }
+
   async print() {
     const payload = {
       commands: this.commands,
@@ -101,5 +116,3 @@ class GatePrint {
 if (typeof window !== "undefined") {
   window.GatePrint = GatePrint;
 }
-
-
