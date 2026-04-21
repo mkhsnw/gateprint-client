@@ -98,4 +98,8 @@ class GatePrint {
   }
 }
 
+if (typeof window !== "undefined") {
+  window.GatePrint = GatePrint;
+}
+
 export default GatePrint;
