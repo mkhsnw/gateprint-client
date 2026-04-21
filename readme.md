@@ -66,6 +66,42 @@ or
 })
 ```
 
+## Barcode
+
+```javascript
+.barcode("your-code", "UPC-A")
+.barcode("your-code", "UPC-E")
+.barcode("your-code", "EAN13")
+.barcode("your-code", "EAN8")
+.barcode("your-code", "CODE39")
+.barcode("your-code", "ITF")
+.barcode("your-code", "CODE128")
+.barcode("your-code", "CODABAR")
+```
+
+## PDF417
+
+```javascript
+.pdf417("your-code", size) // default 3
+```
+
+\*\* some devices might not support printing on PDF417 Format
+
+## Data Matrix
+
+```javascript
+.datamatrix("your-code", size) // default 3
+```
+
+\*\* some devices might not support printing on PDF417 Format
+
+## Smooth (high quality)
+
+```javascript
+.smooth(true)
+.smooth(false)
+```
+
 ## Feed (space)
 
 ```javascript
@@ -89,7 +125,7 @@ or
 
 ```javascript
 // CDN
-<script src="https://cdn.jsdelivr.net/gh/mkhsnw/gateprint-client@v1.1.0/dist/GatePrint.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mkhsnw/gateprint-client@v1.2.0/dist/GatePrint.js"></script>
 // ESM MODULE
 import GatePrint from "gateprint-client"
 

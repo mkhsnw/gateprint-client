@@ -73,7 +73,7 @@ class GatePrint {
     this.commands.push({
       action: "pdf417",
       value: { content: content, size: size },
-    });
+    }); 
     return this;
   }
 
