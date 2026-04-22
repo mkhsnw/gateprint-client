@@ -52,7 +52,8 @@ npm install github:mkhsnw/gateprint-client
 ```
 
 ## image base64
-``` javascript 
+
+```javascript
 .image(base64String)
 ```
 
