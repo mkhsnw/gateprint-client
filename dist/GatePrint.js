@@ -5,7 +5,7 @@ class GatePrint {
     this.ipAddr = ipAddr;
     this.port = port;
   }
-
+  
   // --- Teks & Dasar ---
   text(val) {
     this.commands.push({ action: "text", value: val });
