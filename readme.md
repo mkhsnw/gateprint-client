@@ -51,6 +51,11 @@ npm install github:mkhsnw/gateprint-client
 .imageUrl("https://example.com/image.png")
 ```
 
+## image base64
+``` javascript 
+.image(base64String)
+```
+
 ## QRCODE
 
 ```javascript
@@ -125,7 +130,7 @@ or
 
 ```javascript
 // CDN
-<script src="https://cdn.jsdelivr.net/gh/mkhsnw/gateprint-client@v1.2.0/dist/GatePrint.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mkhsnw/gateprint-client@v1.2.1/dist/GatePrint.js"></script>
 // ESM MODULE
 import GatePrint from "gateprint-client"
 
